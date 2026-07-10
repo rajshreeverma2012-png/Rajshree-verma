@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Elevanta Products</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+ <!-- Preloader -->
+
+<div id="preloader">
+
+    <img src="images/logo.png" alt="Elevanta Logo">
+
+    <h2>Loading...</h2>
+
+</div>
+
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+<a href="index.html">
+<img src="images/logo.png" alt="Elevanta Logo">
+</a>
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="products.html">Products</a></li>
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="dealers.html">Dealers</a></li>
+
+<li><a href="order.html">Order</a></li>
+
+<li><a href="cart.html">🛒 Cart</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li><a href="track-order.html">Track Order</a></li>
+
+<li>
+    <button class="dark-btn" onclick="toggleDarkMode()">
+        🌙
+    </button>
+</li>
+
+</ul>
+
+</nav>
+
+<a href="order.html" class="nav-btn">Order Now</a>
+
+</div>
+
+</header>
+
+<section class="products">
+
+<h2 class="section-title">Our Products</h2>
+
+<div class="product-container">
+
+<div class="product-card">
+<img src="images/bottle-250.png">
+<h3>250 ml</h3>
+<p>Perfect for travel.</p>
+<button onclick="addToCart('250 ml Bottle', 20)">
+    Add to Cart
+</button>
+<button onclick="addToCart('250 ml Bottle',20,'images/bottle-250.png')">
+        Add to Cart
+    </button>
+
+</div>
+
+<div class="product-card">
+<img src="images/bottle-500.png">
+<h3>500 ml</h3>
+<p>Best Selling Bottle.</p>
+<button onclick="addToCart('500 ml Bottle', 30)">Add to Cart</button>
+<button onclick="addToCart('250 ml Bottle',20,'images/bottle-250.png')">
+        Add to Cart
+    </button>
+
+</div>
+
+<div class="product-card">
+<img src="images/bottle-1l.png">
+<h3>1 Litre</h3>
+<p>Healthy Everyday Water.</p>
+<button onclick="addToCart('1 L Bottle', 50)">Add to Cart</button>
+<button onclick="addToCart('250 ml Bottle',20,'images/bottle-250.png')">
+        Add to Cart
+    </button>
+
+</div>
+
+<div class="product-card">
+<img src="images/bottle-2l.png">
+<h3>2 Litre</h3>
+<p>Family Pack.</p>
+<button onclick="addToCart('2 L Bottle', 80)">Add to Cart</button>
+<button onclick="addToCart('250 ml Bottle',20,'images/bottle-250.png')">
+        Add to Cart
+    </button>
+
+</div>
+
+<div class="product-card">
+<img src="images/bottle-20l.png">
+<h3>20 Litre Jar</h3>
+<p>Home & Office Supply.</p>
+<button onclick="addToCart('20 L Jar', 150)">Add to Cart</button>
+<button onclick="addToCart('250 ml Bottle',20,'images/bottle-250.png')">
+        Add to Cart
+    </button>
+
+</div>
+
+</div>
+
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
+</div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h2>Elevanta</h2>
+            <p>Pure Water. Pure Life.</p>
+            <p>Premium Natural Mineral Water</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a><br>
+            <a href="products.html">Products</a><br>
+            <a href="about.html">About</a><br>
+            <a href="dealers.html">Dealers</a><br>
+            <a href="order.html">Order</a><br>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <p>📞 +91 9934097328</p>
+            <p>📧 info@elevanta.in</p>
+            <p>📍 Gaya ji, India</p>
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+        © 2026 Elevanta Natural Mineral Water. All Rights Reserved.
+    </p>
+
+</footer>
+</body>
+</html>

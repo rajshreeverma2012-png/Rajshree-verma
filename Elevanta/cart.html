@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shopping Cart | Elevanta</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">Elevanta</a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="track-order.html">Track Order</a></li>
+                <li>
+    <button class="dark-btn" onclick="toggleDarkMode()">
+        🌙
+    </button>
+</li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="cart-page">
+
+    <h1>🛒 Shopping Cart</h1>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-summary">
+        <h2 id="total">Total: ₹0</h2>
+    </div>
+
+    <div class="checkout-box">
+
+        <h2>Customer Details</h2>
+
+        <form id="checkoutForm">
+
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <input type="tel" id="phone" placeholder="Mobile Number" required>
+
+            <textarea id="address" placeholder="Delivery Address" required></textarea>
+
+            <select id="payment">
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Credit / Debit Card</option>
+            </select>
+
+            <button type="submit">
+                Place Order
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+<script src="js/script.js"></script>
+
+<section class="cart-page">
+
+    <h1>Your Cart</h1>
+
+    <div id="cart-items"></div>
+
+    <h2 id="total">Total: ₹0</h2>
+
+    <h2>Customer Details</h2>
+
+    <form id="checkoutForm">
+
+        <input type="text" id="name" placeholder="Full Name" required>
+
+        <input type="tel" id="phone" placeholder="Mobile Number" required>
+
+        <textarea id="address" placeholder="Delivery Address" required></textarea>
+
+        <select id="payment">
+            <option>Cash on Delivery</option>
+            <option>UPI</option>
+            <option>Credit/Debit Card</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+        <button type="button" onclick="sendWhatsAppOrder()">
+📲 Order on WhatsApp
+</button>
+        <button type="button" onclick="payNow()">
+    Pay Online
+</button>
+
+    </form>
+
+</section>
+
+<script src="js/script.js"></script>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

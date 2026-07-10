@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Order | Elevanta Mineral Water</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f9ff;
+}
+
+.track-section{
+    max-width:700px;
+    margin:120px auto;
+    background:#fff;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.track-section h1{
+    color:#0077ff;
+    margin-bottom:20px;
+}
+
+.track-section input{
+    width:100%;
+    padding:15px;
+    margin:20px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.track-section button{
+    background:#0077ff;
+    color:#fff;
+    border:none;
+    padding:15px 30px;
+    border-radius:8px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.track-section button:hover{
+    background:#005fcc;
+}
+
+#result{
+    margin-top:30px;
+    display:none;
+    text-align:left;
+    background:#f0f8ff;
+    padding:20px;
+    border-radius:10px;
+}
+
+.status{
+    font-size:20px;
+    color:green;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="track-section">
+
+<h1>📦 Track Your Order</h1>
+
+<p>Enter your Order ID below.</p>
+
+<input
+type="text"
+id="orderId"
+placeholder="Example : EV12345">
+
+<button onclick="trackOrder()">
+Track Order
+</button>
+
+<div id="result">
+
+<h2>Order Details</h2>
+
+<p><strong>Order ID:</strong> <span id="showId"></span></p>
+
+<p><strong>Status:</strong>
+<span class="status">
+Out for Delivery
+</span>
+</p>
+
+<p><strong>Expected Delivery:</strong>
+Tomorrow
+</p>
+
+<p><strong>Delivery Partner:</strong>
+Elevanta Delivery Team
+</p>
+
+</div>
+
+</div>
+    <nav>
+
+<ul>
+
+
+<li>
+    <button class="dark-btn" onclick="toggleDarkMode()">
+        🌙
+    </button>
+</li>
+
+</ul>
+
+</nav>
+
+</section>
+
+<script>
+
+function trackOrder(){
+
+const id=document.getElementById("orderId").value;
+
+if(id==""){
+
+alert("Please enter your Order ID");
+
+return;
+
+}
+
+document.getElementById("showId").innerHTML=id;
+
+document.getElementById("result").style.display="block";
+
+}
+
+</script>
+
+</body>
+</html>
